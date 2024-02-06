@@ -57,9 +57,9 @@ export default function Index() {
         {shouldShowNotFound && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
             exit={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.2, delay: 0.4 }}
+            transition={{ duration: 0.2 }}
             className="text-center text-2xl mt-10"
             key={`not-found-${query}`}
           >
