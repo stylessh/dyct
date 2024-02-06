@@ -10,7 +10,7 @@ function Meaning({ meaning }: MeaningProps) {
       {meaning.map((meaning) => (
         <article className="my-10" key={meaning.partOfSpeech}>
           <header className="flex items-center justify-between gap-x-6">
-            <h3 className="text-xl font-bold">{meaning.partOfSpeech}</h3>
+            <h2 className="text-xl font-bold">{meaning.partOfSpeech}</h2>
             <div className="w-full flex-1 flex-grow h-0.5 bg-muted rounded-full" />
           </header>
 

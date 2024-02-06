@@ -47,6 +47,8 @@ function EntryAudio({ audio }: { audio: string }) {
         whileTap={{ scale: 0.9 }}
         key="audio-button"
       >
+        <span className="sr-only">Play word pronunciation</span>
+
         {!isPlaying ? (
           <motion.span
             // scale in-out

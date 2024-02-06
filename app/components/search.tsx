@@ -58,6 +58,7 @@ function Search() {
       />
 
       <button className="p-4">
+        <span className="sr-only">Search button</span>
         <SearchIcon size={20} className="text-accent" />
       </button>
     </motion.form>

@@ -7,6 +7,7 @@ function Header() {
     <header className="flex justify-between items-center my-6">
       <Link to="/">
         <Logo className="size-12" />
+        <span className="sr-only">Dyct</span>
       </Link>
 
       <Theme />
