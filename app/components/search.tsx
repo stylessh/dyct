@@ -10,7 +10,7 @@ import {
 import { useRef } from "react";
 
 function Search() {
-  const [, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const { scrollYProgress } = useScroll();
 
   const searchRef = useRef<HTMLFormElement>(null);
@@ -55,6 +55,7 @@ function Search() {
         type="text"
         placeholder="Airplane"
         className="flex-1 flex-grow p-4 rounded-l-lg bg-transparent"
+        defaultValue={searchParams.get("q") || ""}
       />
 
       <button className="p-4">

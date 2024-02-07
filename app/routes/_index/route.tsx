@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Entry from "~/components/entry";
 import Header from "~/components/header";
 import Search from "~/components/search";
+import Suggestions from "~/components/suggestions";
 import { DictionaryResponse } from "~/types/data";
 
 export const meta: MetaFunction = () => {
@@ -45,6 +46,7 @@ export default function Index() {
 
   const shouldShowEntry = query && data;
   const shouldShowNotFound = query && !data;
+  const shouldShowSuggestions = !query;
 
   return (
     <main className="container min-h-screen flex flex-col">
@@ -53,6 +55,8 @@ export default function Index() {
 
       <AnimatePresence>
         {shouldShowEntry && <Entry data={data} />}
+
+        {shouldShowSuggestions && <Suggestions />}
 
         {shouldShowNotFound && (
           <motion.div

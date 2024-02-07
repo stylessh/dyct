@@ -28,6 +28,11 @@ export default {
         foreground: "rgba(var(--foreground))",
         muted: "rgba(var(--muted))",
       },
+
+      gridTemplateColumns: {
+        "auto-fill-100": "repeat(auto-fill, minmax(150px, 1fr))",
+        "auto-fit-100": "repeat(auto-fit, minmax(150px, 1fr))",
+      },
     },
   },
   plugins: [],
